@@ -19,7 +19,7 @@ public class PlayerBehaviour : MonoBehaviour
         {
             GameObject clon;
             clon = Instantiate(prefab);
-            clon.transform.position = spawnPoint.transform.position; 
+            clon.transform.position = spawnPoint.transform.position - spawnPoint.transform.forward; 
         }
     }
 }
